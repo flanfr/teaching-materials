@@ -1,12 +1,15 @@
 Mathe Skripts Arbeitsblätter
 ----------------------------
 
+Bisher von Philipp:
+   git clone https://github.com/pheek/bbwMathe
 BMS an der BBW (TALS und GeSo)
 BBW Layout, Skripts und Arbbeitsblätter
 
-clone:
+Neues Repo von Flavio Lanfranconi:
+   git clone https://github.com/flanfr/teaching-materials
 
-git clone https://github.com/pheek/bbwMathe
+
 
 Die relativen Pfade für das Kompilieren der LaTeX-Quellen sind in den
 make-files beschrieben.
