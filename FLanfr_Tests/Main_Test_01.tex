@@ -1,0 +1,154 @@
+\documentclass{article}
+
+% have hyperref package before float in order to get strange errors with .\theHfloatbox
+\usepackage{hyperref}
+
+\usepackage{float}
+
+%%\usepackage{german} %% Macht Probleme mit grafiken
+\usepackage{mciteplus}
+
+\usepackage[dvipsnames,table]{xcolor}
+
+\usepackage{pgfplotstable}
+\usepackage{tikz}
+\usepackage{tkz-euclide} %% Grid
+
+\usepackage{amsthm}
+\usepackage{amsfonts} %% Zahlmengen Z, R, ...
+\usepackage{eurosym}
+
+%% THEOREMS?
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems}
+\tcbuselibrary{skins}
+
+
+\usepackage{fancyhdr}
+\usepackage{ngerman}
+\usepackage[utf8]{inputenc}
+
+
+%%\usepackage[dvips]{graphicx}
+
+\usepackage{supertabular}
+\usepackage{makeidx}  
+\usepackage{ifthen} 
+
+\usepackage{multirow}
+\usepackage{listings}
+
+%% Linebreaks in tabular-Zellen:
+\usepackage{makecell}
+
+%%\usepackage{color,fancyvrb,fancybox}
+\usepackage{multicol}
+\usepackage{lastpage}
+%%\usepackage{listings}
+\usepackage{pstricks}
+
+%% bold typewriter font:
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\usepackage{enumitem}
+%\usepackage{enumerate}
+
+\usepackage{float}
+
+\usepackage{titlesec}
+\usepackage{textcomp}
+
+%% Kuchendiagramme
+%%\usepackage{datapie}
+
+%% für Aufgaben Hervorhebung
+%%\usepackage[most]{tcolorbox}
+%%\usepackage[standard,framed]{ntheorem}
+\usepackage{framed}
+\usepackage{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%
+%%\usepackage[most]{tcolorbox}
+
+%\usepackage[tocindentauto]{tocstyle}
+%\usepackage[tocindentauto]{tocbasic}
+\usepackage{tocbasic}
+
+%% für accentset wedge:
+\usepackage{accents}
+
+%% Würfel
+\usepackage{epsdice}
+
+%% Einbinden von GeoGebra Bildchen:
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{arrows}
+\newcommand{\degre}{\ensuremath{^\circ}}
+
+%% Hyperlinks
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    bookmarks=true,
+}
+
+%% bugtracker (part of pgfplots) should be loaded AFTER "hyperref"
+%% See: https://texblog.net/hyperref/ AND https://tex.stackexchange.com/questions/16268/warning-with-footnotes-namehfootnote-xx-has-been-referenced-but-does-not-exi
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+
+%%\usepackage{fourier}  %% eg overarc (Bogenmaß)
+
+
+% allows use of "@" in control sequence names
+\makeatletter
+
+% this creates a custom and simpler ruled box style
+\newcommand\floatc@simplerule[2]{{\@fs@cfont #1 #2}\par}
+\newcommand\fs@simplerule{\def\@fs@cfont{\bfseries}\let\@fs@capt\floatc@simplerule
+  \def\@fs@pre{\hrule height.8pt depth0pt \kern4pt}%
+  \def\@fs@post{\kern4pt\hrule height.8pt depth0pt \kern4pt \relax}%
+  \def\@fs@mid{\kern8pt}%
+  \let\@fs@iftopcapt\iftrue}
+
+% this code block defines the new and custom floatbox float environment
+\floatstyle{simplerule}
+\newfloat{floatbox}{thp}{lob}[section]
+\floatname{floatbox}{Text Box}
+
+\begin{document}
+Normal Text here.\\
+
+\begin{floatbox}{r}{}
+  \textit{Bootstrapping} is a resampling technique used 
+  for robustly estimating statistical quantities, such as 
+  the model fit $R^2$. It offers some protection against 
+  the sampling bias.
+  \caption{Bootstrapping}
+\end{floatbox}
+Normal Text again down here.\\
+\section{Zahlen}
+%\sectuntertitel{Im 15. Jahrhundert --- genauer im Jahre 1413 --- am
+%  zwölften elften um zehn Uhr neun haben acht der sieben Schlauesten
+%  gesagt: ``So sechs wie wir fünf gibt's keine vier mehr, denn wir
+%  drei sind die zwei einzigen Nullen.``}
+
+
+
+%%\TALSTadBFWA{8}{1.1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lernziele}
+
+\begin{itemize}
+	\item Zahlmengen $\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$
+  \item Näherungswerte, Runden
+  \item Wissenschaftliche Notation
+  \item Ordnungsrelationen ($=$, $<$, $>$, $\leq$, $\geq$)
+  \item Betrag
+\end{itemize}
+\end{document}
