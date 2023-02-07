@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Bruchterme}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Erweitern und Kürzen}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Definitionsmenge}{5}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Rechnen mit Bruchtermen}{8}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Addition und Subtraktion von Bruchtermen}{8}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Multiplikation von Bruchtermen}{13}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3}Division von Bruchtermen}{13}{subsubsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.4}Doppelbrüche}{14}{subsubsection.1.3.4}%

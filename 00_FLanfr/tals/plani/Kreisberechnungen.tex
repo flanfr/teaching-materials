@@ -1,0 +1,119 @@
+%%
+%% 2019 07 04 Ph. G. Freimann
+%%
+
+\section{Kreise}\index{Kreisberechnungen}\index{Berechnungen am Kreis}
+\sectuntertitel{Warum sind Seeräuber so schlecht in Geometrie? --- Weil sie $\pi$ raten!}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection*{Lernziele}
+
+\begin{itemize}
+\item einfache Kreisberechnungen
+\item Kreisring
+\item Tangente
+\item Sehne (und Sekante)
+\item Segment und Sektor
+\end{itemize}
+
+\TadBMTG{56}{4}
+
+\newpage
+
+
+\subsection{Kreisberührung}\index{Kreisberührung!Planimetrie}
+
+
+\bbwCenterGraphic{8cm}{tals/plani/img/KleinsterKreis.png}
+In obigem Kreis sind zwei kleinere Kreise einbeschrieben. Berechnen
+Sie den Radius $k$ des kleinsten Kreises aus dem gegebenen Radius $r$ des
+großen Kreises.
+\TNT{12}{
+  \bbwCenterGraphic{8cm}{tals/plani/img/KleinsterKreisLoesung.png}
+  $$\Delta A: x^2 + k^2 = (r-k)^2$$
+  $$\Delta B: x^2 + (\frac{r}2 - k)^2 = (\frac{r}2 + k)^2$$
+  Ausmultiplizieren und 2. Gleichung von 1. Gleichung subtrahieren:
+  $$k^2 - \frac{r^2}4 +rk - k^2  =r^2  -2rk - \frac{r^2}4 - rk$$\
+  $$-\frac{r^2}4 + rk = r^2 - 3rk - \frac{r^2}4$$
+  $$rk = r^2 - 3rk$$
+  $$4k = r$$
+  $$k = \frac{r}4$$
+}%% END TNT
+\newpage
+
+
+\begin{rezept}{Kreisberührung}{}
+  Bei Aufgaben, bei denen sich zwei Kreise \textbf{berühren}, ist es
+  von Vorteil, die Mittelpunkte der Kreise mit den Tangentenpunkten zu
+  verbinden.
+
+  Danach suchen Sie rechtwinklige Dreiecke.
+\end{rezept}
+
+\subsection{Umfang und Fläche}\index{Kreis!Umfang}
+
+\begin{gesetz}{Kreislinie}{}\index{PI@$\pi$ (Pi)}\index{$\pi$}
+  Die Länge der Kreislinie wird aus dem Durchmesser $d=2r$  mittels Kreiszahl
+  $\pi$ berechnet. Es gilt für den Umfang $U$:
+  $$U = 2r\pi = d\pi$$
+\end{gesetz}
+
+\begin{gesetz}{Kreisfläche}{}\index{Kreisfläche}
+  Die Kreisfläche $A$ eines Kreises mit Radius $r$ wird wie folgt
+  berechnet:
+  $$A = r^2\pi$$
+\end{gesetz}
+Herleitung
+\TNTeop{Pizza: Schneiden, auslegen = halbe Rechtecksfläche.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\subsection{Kreisteile}
+\begin{gesetz}{Kreisring}{}\index{Kreisring}
+  Die Kreisringfläche ist die Differenz der umgebenden Kreisfläche
+  (Radius $R$) und
+  der inneren Kreisfläche (Radius $r$):
+
+  $$A = A(R) - A(r) = R^2\pi - r^2\pi = (R^2-r^2)\pi$$
+\end{gesetz}
+
+\begin{gesetz}{Kreisbogen und
+    Kreissektor}{}\index{Kreissektor}\index{Kreisbogen}
+  Für den Sektorwinkel $\varphi$ werden Bogen $b$ und Sektorfläche
+  $A_{SK}$ wie folgt berechnet:
+  $$b = 2r\pi \cdot{}\frac{\varphi}{360\degre} =
+  r\pi\cdot{}\frac{\varphi}{180\degre}$$
+  $$A_{SK} = r^2\pi\cdot{}\frac{\varphi}{360\degre} = \frac12\cdot{}b\cdot{}r$$
+  \end{gesetz}
+  
+\begin{rezept}{Geometrische Aufgaben}{}
+Um geometrische Aufgaben zu lösen, hat bei mir folgendes meist geholfen:
+
+\begin{enumerate}
+\item Machen Sie eine Skizze
+\item Machen Sie eine möglichst genaue Konstruktion
+\item Geben Sie Gegebenem und Gesuchtem Namen
+\item Verwenden Sie Farben für Gegebenes
+\item Verwenden Sie die selben Farben (od. Symbole) für die selben Streckenlängen, Winkel, Flächen
+\item Bei Aufgaben mit Kreisen: Verbinden Sie die Mittelpunkte 
+\item Suchen Sie rechtwinklige Dreiecke (Pythagoras)
+
+\end{enumerate}
+\end{rezept}  
+
+%Für das Kreissegment Siehe \cite{marthaler20geom} Seite 61 Kap. 4.2.3.
+%
+%\subsection*{Aufgaben}
+%%% Kreisfläche
+%%%\TALSAadBFWG{43ff (Kreisfläche)}{159. 160. 165. 168.}
+%\AadBMTG{63}{1., 2., 3. und 4.}
+%%% Kreissektor und Segment
+%%%\TALSAadBFWG{48ff(Kreissektor)}{179. 180. 183. 185. 187. 188. 189. 192. 194.}
+%\AadBMTG{65}{12., 13. (Bogenmaß), 14., 15., 17.}
+%\AadBMTG{123}{39. a) b) c) d)}%% Aufgabe schon vorgelöst
+%%% Kreissegment
+%%%\TALSAadBFWG{51ff (Kreissegment)}{197. 198. 200. 204. 206.}
+%
+%
+%%% Vermischte Aufgaben
+%%%\TALSAadBFWG{53ff (vermischte Aufgaben)}{209. 215. 219. 223.}

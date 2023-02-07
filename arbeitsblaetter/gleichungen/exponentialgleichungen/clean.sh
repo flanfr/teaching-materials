@@ -1,1 +1,0 @@
-/home/phi/matgit/arbeitsblaetter/clean.sh

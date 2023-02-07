@@ -1,0 +1,75 @@
+%%
+%% Meta: Master Document
+%% Neutral KST Jahr 1
+%% Zielgruppe 
+%% Welche Zielgruppe soll ausgedruckt werden?
+%% Typischerweise entweder TALS oder GESO (nicht beide). TRAINER ist optional für
+%% die Trainer Version.
+\newif\ifisTALS
+\newif\ifisGESO
+\newif\ifisTRAINER
+\input{zielgruppe_TRAINER}
+
+\input{FL_LayoutDoc}
+
+\renewcommand{\author}{Philipp G. Freimann \& Flavio Lanfranconi}
+\renewcommand{\grafikautor}{Ph. G. Freimann}
+\renewcommand{\authoremail}{philipp.freimann@bbw.ch}
+\renewcommand{\erstellungsdatum}{17. 8. 2022}
+\renewcommand{\docversion}{0.8.1 (\LaTeX{})}
+
+\renewcommand{\doctitel}{Mathematik}
+\renewcommand{\fachthema}{ Brüche}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Gesamt-Skripts benötigen ALINONE (all in one), damit Referenzen auf andere
+%% Kapitel funktioniren:
+\isALLINONEtrue%%
+
+\scriptStart{}
+
+%% Einstiegsaufgaben
+%\input{geso/000/GESO_Einstiegsaufgaben}
+
+%% Algebra I
+\input{allg/alg/Bruchterme}
+
+
+\scriptEnde{}
+
+
+%% Geometrie I - Plani 2
+\input{tals/plani/AllTALS-2}
+
+
+
+%% All TALS
+\input{tals/gl2/AllTALS}
+
+
+% 2. Jahr
+%% Gleichungssysteme
+\input{tals/gls/AllTALS}
+
+
+%% Datenanalyse
+\input{tals/daan/AllTALS}
+
+
+%% Funktionen II TALS
+\input{tals/fct2/AllTALS}
+
+
+%% Trigonometrie III
+\input{tals/trig3/AllTALS}
+
+
+%% Trigonometrie I%
+\input{tals/trig4/AllTALS}
+
+
+%% Trigonometrie I%
+\input{tals/ungl/AllTALS}
+
+
+\scriptEnde{}
